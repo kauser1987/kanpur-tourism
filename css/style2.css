@@ -1,0 +1,330 @@
+@font-face {
+    font-family: home;
+    src: url("../fonts/Futura-Bold.woff2");
+}
+@font-face {
+    font-family: nav;
+    src: url("../fonts/Chewy-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: home;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color:#39808d;
+    color: white;
+    position: relative;
+}
+#page2 #nav{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    font-family: "nav";
+}
+/* #page2 #nav ul li:last-child{
+    margin-right: 4vw;
+} */
+#page2 #nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+#page2 #nav ul li{
+    opacity: 1;
+    list-style: none;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    color: white;
+    position: relative;
+}
+#page2 #nav ul li::after{
+content: " ";
+position: absolute;
+bottom: 0;
+left: 0;
+height: 2px;
+width: 0%;
+background-color: white;
+transition: all ease-in 0.3s;
+}
+#page2 #nav ul li:hover:after{
+    width: 100%;
+}
+#page2 #nav #entertainment{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+#page2 #nav #entertainment #menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .8vw;
+    top: 110%;
+    left: 0%;
+    height: 10vw;
+    width: 10vw;
+    opacity: 0;
+    z-index: 99;
+}
+#page2 #nav #entertainment:hover #menu{
+    opacity: 1;
+}
+#page2 #nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+#page2 #nav #img{
+    margin-left: 2vw;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    }
+#page2 #nav #img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid whitesmoke;
+}
+#page2 #slide{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    height: 50vh;
+    width: 95vw;
+    border-radius: 12px;
+    overflow: hidden;
+}
+#page2 #slide #slide1{
+    left: -100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    animation: anima1 7s linear 3s  infinite alternate-reverse;
+}
+#page2 #slide #slide1 #left,#center,#right{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+#page2 #slide #slide1 #left,#center,#right p{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 1vw;
+}
+
+
+#page2 #slide #slide2{
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    /* background-color: brown; */
+    animation: anima2 7s linear 3s infinite alternate-reverse;
+}
+#page2 #slide #slide2 #left2,#center2,#right2{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+#page2 #slide #slide2 #left2,#center2,#right2 p{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 1vw;
+}
+
+/* #page2 #slide #slide2:hover{
+    animation-play-state: paused;
+}
+#page2 #slide #slide1:hover{
+    animation-play-state: paused;
+} */
+@keyframes anima1 {
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes anima2 {
+    100%{
+        transform: translateX(100%);
+    }
+}
+#page2 #slide #slide1 #left,#center,#right{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide1 #left img{
+    border-radius:12px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border: 2px solid whitesmoke;
+    
+}
+#page2 #slide #slide1 #center{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide1 #center img{
+    border-radius:12px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border: 2px solid whitesmoke;
+    
+}
+#page2 #slide #slide1 #right{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide1 #right img{
+    border-radius:12px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border: 2px solid whitesmoke;
+    
+}
+#page2 #slide #slide2 #left2{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide2 #left2 img{
+    border-radius:12px;
+    height: 82%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border: 2px solid whitesmoke;
+}
+#page2 #slide #slide2 #center2{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide2 #center2 img{
+    border-radius:12px;
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border: 2px solid whitesmoke;
+    
+}
+#page2 #slide #slide2 #right2{
+    border-radius:12px;
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page2 #slide #slide2 #right2 img{
+    border-radius:12px;
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border: 2px solid whitesmoke;
+    
+}
+#page2 #label{
+    height: 8vh;
+    width: 80vw;
+    left: 50%;
+    bottom: 10%;
+    position: absolute;
+    transform: translateX(-50%);
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 1s;
+
+}
+#page2 #label h1{
+    font-size: 4vw;
+    text-transform: uppercase;
+    transform: translateY(100%);
+    /* background-image: url("../images/logo2.jfif"); */
+    /* background-position: top; */
+    /* background-clip: text; */
+    /* -webkit-background-clip: text; */
+    -webkit-text-stroke: 2px  white; ;
+    /* background-clip: text; */
+    color: transparent;
+    /* text-shadow: 2px 2px 2px  rgb(194, 194, 76); */
+    
+}
+/* @keyframes lifter {
+    0%{
+
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+} */

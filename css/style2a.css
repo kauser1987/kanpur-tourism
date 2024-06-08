@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page2a{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #39808d;
+    white-space: nowrap;
+    position: relative;
+   
+}
+#page2a span h1{
+    /* top: 5%; */
+    position: absolute;
+    font-size: 20vw;
+    text-transform: uppercase;
+    font-stretch: wider;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    background-image: url("../images/logo2.jfif");
+    -webkit-background-clip: text;
+    z-index: 999;
+}
+#baloon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 40vw;
+    width: 40vw;
+    border-radius: 50%;
+    /* background-color: orange; */
+    /* filter: blur(10px); */
+}
+#baloon1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: orangered;
+    animation: mover1 3s linear  infinite alternate ;
+    /* filter: blur(10px); */
+}
+#baloon2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: brown;
+    animation: mover2 3s linear  infinite alternate  ;
+    /* filter: blur(10px); */
+}
+#baloon3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: yellowgreen;
+    animation: mover3 3s linear  infinite alternate  ;
+    /* filter: blur(10px); */
+}
+@keyframes mover1 {
+    0%{transform: translateX(-30%);}
+    100%{transform: translateX(30%);}
+}
+@keyframes mover2 {
+    0%{transform: translateY(-30%);}
+    100%{transform: translateY(30%);}
+}
+@keyframes mover3 {
+    0%{transform: translate(-30%,30%);}
+    100%{transform: translate(30%,-30%);}
+}

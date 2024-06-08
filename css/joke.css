@@ -1,0 +1,83 @@
+@font-face {
+    font-family: jok;
+    src: url("../fonts/Futura-Bold.woff2");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #39808d;
+}
+
+#hom{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+#hom a{
+    text-decoration: none;
+    color: white;
+}
+#content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: whitesmoke;
+    height: 45vw;
+    width: 80vw;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#content h2{
+    font-family: jok;
+    margin: 1vw 0;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+    color: black;
+    font-size: 5vw;
+}
+#content h2::after{
+    left: 4%;
+    top: 2%;
+    content: "JOKES";
+    position: absolute;
+    color: #89d7e4;
+    font-weight: bold;
+    font-size: 5vw;
+}
+#container{
+    height: 80%;
+    width: 80%;
+    background-color: #39808d;
+    margin: 1.5vw 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    text-transform: uppercase;
+    color: whitesmoke;
+    padding: 5vw;
+}
+#content #button{
+    padding: .6vw 2vw;
+    border-radius: 50px;
+    background-color: #39808d;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 2vw;
+}

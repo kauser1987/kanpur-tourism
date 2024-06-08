@@ -1,0 +1,164 @@
+@font-face {
+    font-family: back;
+    src: url("../fonts/Futura-Bold.woff2");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+}
+#back{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+#back a{
+    font-family: back;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#container{
+    position: absolute;    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 75vh;
+    width: 80vw;
+    background-color: #282c31;
+    }
+    #container #right{
+        position: absolute;
+        height: 80%;
+        width: 60%;
+        background-color: #89d7e4;
+        right: 3%;
+        top: 10%;
+    }
+
+#container #right h2{
+    position: absolute;
+    left: 55%;
+    transform: translateX(-55%);
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 3vh;
+    color: #003865;
+    font-weight: bolder;
+    z-index: 99;
+}
+form{
+    padding-top: 4vw;
+    padding-left: 3vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: large;
+    font-weight: bolder;
+    right: 0;
+    top: 0;
+}
+form textarea{
+    font-size: medium;
+    font-weight: bold;
+    padding-top: 1vw;
+    padding-left: 2vw;
+    height: 5vw;
+    width: 60%;
+    color: #605b5b;
+}
+form input{
+    color: #605b5b;
+    font-size: small;
+    font-weight: bold;
+    padding-left: 2vw;
+    height: 3vw;
+    width: 60%;
+}
+#button{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4vw;
+}
+#button #reset{
+    height: 3vw;
+    width: 7vw;
+    background-color: #89d7e4;
+    color: #003865;
+    font-size: small;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+}
+#button #submit{
+    height: 3vw;
+    width: 7vw;
+    background-color: #89d7e4;
+    color: #003865;
+    font-size: small;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+}
+
+#container #left{
+    position: absolute;
+    height: 60%;
+    width: 35%;
+    left: 8%;
+    top: 17%;
+    z-index: 99;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+#container #left #block{
+    height: 23vh;
+    width: 13vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    user-select: none;
+}
+#container #left #block img{
+    cursor: pointer;
+}
+#container #left #block #title{
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-weight: bolder;
+}
+#container #left #block #desc{
+   text-transform: capitalize; 
+   font-size: 1vw;
+}
+
+
+
+
+
+
+
